@@ -4,12 +4,29 @@ import "./App.css";
 const About = () => {
   return (
     <section id="about" className="about">
-      <h2>About Me</h2>
-      <p>
-        I’m Athisha, a second-year B.Sc. Computer Science student passionate about <b>web development</b>.<br/>
-        I’ve built several small projects using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, including a to-do list app, quiz app, and a responsive website hosted on Netlify and GitHub.<br/>
-        I’m familiar with <b>Git</b> and <b>GitHub</b> for version control and currently learning modern tools like React.
-      </p>
+      <div className="section-label">Who I Am</div>
+      <h2 className="section-title">About <span className="gradient-text">Me</span></h2>
+      <div className="about-grid">
+        <div className="about-card">
+          <div className="about-icon">🎓</div>
+          <h3>Education</h3>
+          <p>B.Sc. Computer Science student (2nd Year), building a strong foundation in software development and algorithms.</p>
+        </div>
+        <div className="about-card featured-card">
+          <div className="about-icon">💡</div>
+          <h3>Who I Am</h3>
+          <p>
+            I'm <strong>Athisha</strong>, a passionate web developer who loves turning ideas into
+            elegant digital experiences. I thrive on learning new technologies and building
+            projects that make a real impact.
+          </p>
+        </div>
+        <div className="about-card">
+          <div className="about-icon">🚀</div>
+          <h3>Experience</h3>
+          <p>Built responsive apps — To-Do App, Quiz App, Catering Website — deployed on Netlify & GitHub Pages with Git version control.</p>
+        </div>
+      </div>
     </section>
   );
 };

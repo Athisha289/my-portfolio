@@ -2,46 +2,68 @@ import React from "react";
 import "./App.css";
 import { FaEnvelope, FaPhoneAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 
+const contactItems = [
+  {
+    icon: <FaEnvelope />,
+    label: "Email",
+    value: "athisha289@gmail.com",
+    href: "mailto:athisha289@gmail.com",
+    color: "#6366f1",
+  },
+  {
+    icon: <FaPhoneAlt />,
+    label: "Phone",
+    value: "+91 6374603947",
+    href: "tel:+916374603947",
+    color: "#8b5cf6",
+  },
+  {
+    icon: <FaGithub />,
+    label: "GitHub",
+    value: "github.com/Athisha289",
+    href: "https://github.com/Athisha289",
+    color: "#1f2937",
+  },
+  {
+    icon: <FaLinkedin />,
+    label: "LinkedIn",
+    value: "linkedin.com/in/athisha",
+    href: "https://www.linkedin.com/in/athisha-m-9613b7373",
+    color: "#0a66c2",
+  },
+];
+
 const Contact = () => {
   return (
     <section id="contact" className="contact">
-      <h2>Contact Me</h2>
+      <div className="section-label">Get In Touch</div>
+      <h2 className="section-title">Contact <span className="gradient-text">Me</span></h2>
       <p className="contact-intro">
-        I’d love to connect! Whether you want to collaborate, ask something, or
-        just say hi — feel free to reach out 😊
+        Open to opportunities, collaborations, or just a chat — reach out anytime! 🚀
       </p>
 
-      <div className="contact-cards">
-        <div className="contact-card">
-          <FaEnvelope className="contact-icon" />
-          <h4>Email</h4>
-          <p>athisha289@gmail.com</p>
-        </div>
-        <div className="contact-card">
-          <FaPhoneAlt className="contact-icon" />
-          <h4>Phone</h4>
-          <p>+91 6374603947</p>
-        </div>
-        <div className="contact-card">
-          <FaGithub className="contact-icon" />
-          <h4>GitHub</h4>
-          <a href="https://github.com/Athisha289" 
-          target="_blank" rel="noreferrer">
-            github.com/athisha
-          </a>
-        </div>
-        <div className="contact-card">
-          <FaLinkedin className="contact-icon" />
-          <h4>LinkedIn</h4>
+      <div className="contact-cards-grid">
+        {contactItems.map((item) => (
           <a
-            href="https://www.linkedin.com/in/athisha-m-9613b7373?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            key={item.label}
+            href={item.href}
             target="_blank"
             rel="noreferrer"
+            className="contact-card"
+            style={{ "--card-accent": item.color }}
           >
-            linkedin.com/in/athisha
+            <div className="contact-icon" style={{ color: item.color }}>{item.icon}</div>
+            <div>
+              <h4>{item.label}</h4>
+              <p>{item.value}</p>
+            </div>
           </a>
-        </div>
+        ))}
       </div>
+
+      <footer className="footer">
+        <p>© 2025 <span className="gradient-text">M.Athisha</span> · Made with ❤️ in React</p>
+      </footer>
     </section>
   );
 };
