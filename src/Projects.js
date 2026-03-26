@@ -30,7 +30,7 @@ const projects = [
     emoji: "🏫",
     title: "Campus Complaint Portal",
     desc: "Interactive complaint portal with submitting and track campus issues in real time.",
-    tags: ["JavaScript", "HTML", "CSS",],
+    tags: ["JavaScript", "HTML", "CSS"],
     demo: "https://campus-complaint-portal.netlify.app/",
     github: "https://github.com/Athisha289/campus_complaint_portal",
   },
