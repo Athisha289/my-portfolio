@@ -21,7 +21,7 @@ const Navbar = () => {
         <span></span><span></span><span></span>
       </button>
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-        {["home", "about", "skills", "projects", "contact"].map((sec) => (
+        {["home", "about", "skills", "projects", "certificates", "contact"].map((sec) => (
           <li key={sec}>
             <a href={`#${sec}`} onClick={() => setMenuOpen(false)}>
               {sec.charAt(0).toUpperCase() + sec.slice(1)}

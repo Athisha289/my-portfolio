@@ -62,7 +62,7 @@ const Contact = () => {
       </div>
 
       <footer className="footer">
-        <p>© 2025 <span className="gradient-text">M.Athisha</span> · Made with ❤️ in React</p>
+        <p><span className="gradient-text">M.Athisha</span> · Made with ❤️ in React</p>
       </footer>
     </section>
   );

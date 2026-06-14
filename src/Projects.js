@@ -3,11 +3,25 @@ import "./App.css";
 
 const projects = [
   {
+    emoji: "🎮",
+    title: "Sryzaron gaming platform",
+    desc: "Developed gaming tournament platform with authenticated admin dashboard. Users can register for tournaments and order products through WhatsApp. Built admin features to announce news and manage user-submitted details.",
+    tags: ["React", "supabase", "Tailwind CSS"],
+    demo: "https://sryzaron.netlify.app/",
+  },
+  {
+    emoji: "💼",
+    title: "Website for a digital marketing agency",
+    desc: "Developed responsive website with modern UI and mobile-friendly layout.",
+    tags: ["React", "Tailwind CSS", "Responsive"],
+    demo: "https://nagaraj-studio.vercel.app/",
+  },
+  {
     emoji: "🌐",
     title: "Portfolio Website",
     desc: "My personal portfolio built using React, featuring smooth animations, responsive design, and a professional UI.",
     tags: ["React", "CSS", "Responsive"],
-    demo: "https://athisha289.github.io/my-portfolio/",
+    demo: "https://athisha-portfolio.netlify.app/",
     github: "https://github.com/Athisha289/my-portfolio",
   },
   {

@@ -10,7 +10,7 @@ const About = () => {
         <div className="about-card">
           <div className="about-icon">🎓</div>
           <h3>Education</h3>
-          <p>B.Sc. Computer Science student (2nd Year), building a strong foundation in software development and algorithms.</p>
+          <p>B.Sc. Computer Science student (3rd Year), building a strong foundation in software development and algorithms.</p>
         </div>
         <div className="about-card featured-card">
           <div className="about-icon">💡</div>
@@ -24,7 +24,7 @@ const About = () => {
         <div className="about-card">
           <div className="about-icon">🚀</div>
           <h3>Experience</h3>
-          <p>Built responsive apps — To-Do App, Quiz App, Catering Website — deployed on Netlify & GitHub Pages with Git version control.</p>
+          <p>Built responsive apps with backend — Completed internships and developed real-world projects including admin dashboards, complaint portals, and business websites — deployed on Netlify & GitHub Pages with Git version control.</p>
         </div>
       </div>
     </section>
